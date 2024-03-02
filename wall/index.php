@@ -2,7 +2,7 @@
 	session_start();
 	if ($_GET['logout']=='true') {
 		$_SESSION['JID']='';
-		echo '<meta http-equiv="refresh" content="3;url=/" />';
+		echo '<meta http-equiv="refresh" content="1;url=/" />';
 		die('LOGGED OUT!');
 	}
 	if ($_GET['register']!='' && !file_exists('../users/' . $_GET['jid'] . '.password')) {
@@ -24,7 +24,7 @@
 	elseif ($_GET['id']!='')
 		$_SESSION['JID']='';
 	else {
-		echo '<meta http-equiv="refresh" content="3;url=/" />';
+		echo '<meta http-equiv="refresh" content="1;url=/" />';
 		die('WRONG LOGIN PASSWORD!');
 	}
 	if ($_GET['id']!='') $JID=$_GET['id']; else $JID=$_SESSION['JID'];
