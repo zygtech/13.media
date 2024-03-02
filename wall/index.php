@@ -94,6 +94,7 @@ if ($JID!='') {
 	if ($_SESSION['JID']!='') {
 ?>
 	<h3>PUBLISH NEW BLOG <a href="../newarticle.php">ARTICLE</a>/<a href="../newphoto.php">PHOTO</a>/<a href="../newvideo.php">VIDEO</a></h3>
+	<h3><a href="../wall/?id=<?php echo $JID; ?>">SHARE YOUR BLOG WEBSITE LINK</a></h3>
 <?php	
 	}
 	foreach ($wall as $article) {
