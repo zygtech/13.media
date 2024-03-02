@@ -1,4 +1,9 @@
 <?php
+    session_start();
+    if (file_exists('users/' . $_SESSION['JID'] . '.password')) {
+        echo '<meta http-equiv="refresh" content="0;url=wall" />';
+        die();
+    }
 /*
  * index.php
  * 
