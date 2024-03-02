@@ -38,7 +38,7 @@
 
 <body>
 	<div class="border">
-		Login with XMPP/Jabber ID:
+		Login with E-mail:
 	<form id="login" action="wall/" method="POST">
 	<input type="text" name="JID" placeholder="LOGIN ID" />
 	<input type="password" name="password" placeholder="PASSWORD" />
