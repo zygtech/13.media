@@ -1,2 +1,2 @@
 # 13.media
-Multi-user blogging system.
+Minimalistic multi-user blogging system.
